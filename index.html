@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Optical illusion 👀</title>
+    <style>
+      body {
+        background: white;
+      }
+      h1 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        color: #212121;
+        line-height: 40px;
+        border: 2px solid #ffeb3b;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      h2 {
+        text-align: center;
+        color: #212121;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      img {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        border-radius: 10px;
+        margin-bottom: 25px;
+        margin-top: 20px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 15px;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      button {
+        background: #ffeb3b;
+        display: block;
+        color: #757575;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 550;
+        margin: 0 auto 30px auto;
+        padding: 12px 25px;
+        border: 1px solid #bdbdbd;
+        border-radius: 30px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        color: #212121;
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        color: #ffffff;
+        background: #757575;
+        cursor: pointer;
+      }
+      .container {
+        background: linear-gradient(60deg, #ffeb3b 0%, #8bc34a 100%);
+        border-radius: 30px;
+        box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.3);
+        max-width: 500px;
+        margin: 20px auto 30px;
+        padding: 10px 40px;
+      }
+      .learnMore {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 25px;
+        text-decoration: none;
+        font-size: 15px;
+        color: #757575;
+      }
+      .learnMore:hover {
+        text-decoration: underline;
+      }
+      .kinds {
+        color: #689f38;
+      }
+      .footer {
+        text-decoration: none;
+        color: #757575;
+      }
+      .footer:hover {
+        text-decoration: underline;
+      }
+      .footerText {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+
+        color: #757575;
+      }
+      .footer:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Optical Illusion</h1>
+      <h2>How many legs does the elephant have?</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/721/original/elephant.jpg?1678389741"
+        alt="Elephant legs illusion"
+      />
+      <hr color="#ffeb3b" />
+      <p>
+        Optical illusion is an illusion caused by the visual system and
+        characterized by a visual percept that arguably appears to differ from
+        reality. Illusions come in a wide variety; their categorization is
+        difficult because the underlying cause is often not clear but a
+        classification proposed by Richard Gregory is useful as an orientation.
+        According to that, there are three main classes: <em>physical</em>,
+        <em>physiological</em>, and <em>cognitive</em> illusions, and in each
+        class there are four kinds: <span class="kinds">ambiguities</span>,
+        <span class="kinds">distortions</span>,
+        <span class="kinds">paradoxes</span>, and
+        <span class="kinds">fictions</span>.<br />
+        <a
+          href="https://en.wikipedia.org/wiki/Optical_illusion"
+          target="_blank"
+          class="learnMore"
+        >
+          Learn more on <b>Wikipedia</b></a
+        >
+      </p>
+      <button class="more-button">👀 More optical illusions</button>
+      <p class="footerText">
+        This page was built by
+        <a
+          href="https://www.linkedin.com/in/olena-myronenko-ua/"
+          target="_blank"
+          class="footer"
+          ><b>Olena Myronenko</b>. </a
+        >Used
+        <a
+          href="https://www.materialpalette.com/light-green/yellow"
+          target="_blank"
+          class="footer"
+          ><b>palette</b>.</a
+        >
+      </p>
+    </div>
+    <script>
+      function more() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+
+        alert(
+          "Thank You, " +
+            name +
+            "! We'll send you the link with many other optical illusions by email " +
+            email +
+            "."
+        );
+      }
+
+      let moreButton = document.querySelector(".more-button");
+      moreButton.addEventListener("click", more);
+    </script>
+  </body>
+</html>
